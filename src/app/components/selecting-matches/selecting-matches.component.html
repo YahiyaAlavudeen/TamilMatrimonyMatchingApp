@@ -1,0 +1,38 @@
+<div class="background-image-container">
+  <div class="tbg">
+    <div class="theader">
+      <div class="tlogo">
+        <img
+          src="../assets/tmicon.png"
+          alt="Tamil Matrimony"
+          title="Tamil Matrimony Logo"
+        />
+      </div>
+    </div>
+
+    <div class="tbgwrap">
+      <app-matches
+        [parentSubject]="parentSubject"
+        (profileEvent)="receiveData($event)"
+      >
+      </app-matches>
+      <div class="tcontrols">
+        <div class="tno" (click)="cardAnimation('swipeleft')">
+          <i class="fa fa-times" style="cursor: pointer" aria-hidden="true"></i>
+        </div>
+        <div class="ti">
+          <a
+            class="fa fa-info"
+            style="cursor: pointer"
+            aria-hidden="true"
+            routerLink="/profile-details"
+            (click)="onInfoClick()"
+          ></a>
+        </div>
+        <div class="tyes" (click)="cardAnimation('swiperight')">
+          <i class="fa fa-heart" style="cursor: pointer" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

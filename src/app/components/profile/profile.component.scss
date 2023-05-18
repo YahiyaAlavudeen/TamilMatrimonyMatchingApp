@@ -1,0 +1,82 @@
+.tphoto {
+  width: 620px;
+  height: 550px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  top: 15px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border: 1px solid #c0c0c0;
+  padding-bottom: 60px;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px #c0c0c0;
+}
+
+.tname {
+  padding: 15px;
+  font-size: 20px;
+  font-family: "Helvetica", sans-serif;
+  float: left;
+}
+.tname .age {
+  font-weight: 200;
+}
+.tinfo {
+  font-family: "Helvetica", sans-serif;
+}
+
+.hearticon {
+  color: #ec1842;
+  margin-left: 28rem;
+  font-size: medium;
+}
+
+.fa-heart {
+  color: #000; /* Original color */
+  float: right;
+  position: relative;
+}
+
+.isSelected {
+  color: red; /* Selected color */
+  float: right;
+  position: relative;
+}
+
+/* Default styles for the text */
+.responsive-text {
+  font-size: 16px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .responsive-text {
+    font-size: 14px;
+  }
+}
+
+/* Media query for tablet devices */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .responsive-text {
+    font-size: 18px;
+  }
+}
+
+/* Media query for desktop devices */
+@media (min-width: 1024px) {
+  .responsive-text {
+    font-size: 20px;
+  }
+}
+
+/* component.css */
+.custom-font {
+  font-family: "Lovers Quarrel", cursive;
+  //font-family: 'Luxurious Roman', cursive;
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+}

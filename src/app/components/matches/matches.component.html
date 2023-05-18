@@ -1,0 +1,27 @@
+<div
+  class="tphoto"
+  [@cardAnimator]="animationState"
+  (@cardAnimator.done)="resetAnimationState($event)"
+  (swipeleft)="startAnimation('swipeleft')"
+  (swiperight)="startAnimation('swiperight')"
+>
+  <div class="image-container">
+    <img
+      [src]="users[index].picture"
+      title="tphoto"
+      alt="Tamil Matrimony Photo"
+    />
+  </div>
+  <div class="tname">
+    {{ users[index].name }}, <span class="age">{{ users[index].age }}</span>
+  </div>
+  <div class="tinfo">
+    <i class="fa-solid fa-shield-check" style="color: #2ca04f"></i>
+    <i
+      class="fa fa-star"
+      aria-hidden="true"
+      [class.isSelected]="isSelected"
+      (click)="toggleSelection()"
+    ></i>
+  </div>
+</div>

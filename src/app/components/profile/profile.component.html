@@ -1,0 +1,25 @@
+<mat-card>
+  <img
+    mat-card-image
+    [src]="candidateInfo?.picture"
+    alt="Photo of a Shiba Inu"
+  />
+
+  <mat-card-content>
+    <p mat-line style="font-weight: bold">Name - {{ candidateInfo?.name }}</p>
+    <p mat-line>Age - {{ candidateInfo?.age }}</p>
+    <p mat-line>Height - {{ candidateInfo?.height }}</p>
+    <p mat-line>Education - {{ candidateInfo?.Education }}</p>
+    <p mat-line>Profession - {{ candidateInfo?.Profession }}</p>
+    <p mat-line>Contact - {{ candidateInfo?.phone }}</p>
+    <p mat-line>Address - {{ candidateInfo?.adress }}</p>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <i
+      class="fa fa-heart"
+      aria-hidden="true"
+      [class.isSelected]="isSelected"
+      (click)="toggleSelection()"
+    ></i>
+  </mat-card-actions>
+</mat-card>
